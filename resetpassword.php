@@ -1,4 +1,5 @@
 <?php
+//connection execute
 include_once('connect.php');
 
 if(!isset($_SESSION['username'])){
@@ -19,6 +20,7 @@ if(!isset($_SESSION['username'])){
       <button name="resetpassword" type="resetpassword">Reset</button>
       
     </form>
+    //redirect to the login page
     <a href="logout.php">logout</a>
   </div>
   </head>
