@@ -1,8 +1,7 @@
 <?php
+//database connection execute
 include_once('connect.php');
-
 ?>
-
 <html>
 <head>
 <link rel="stylesheet" type="text/css" href="Style.css">
@@ -12,12 +11,14 @@ include_once('connect.php');
   <div class="form">
   <h1 class="login">LOGIN</h1>
     
-    <form action="" class="login-form" method="post">
-      <input type="text" name="username" placeholder="username"/>
-      <input type="password"  name="password" placeholder="password"/>
-      <button name="register" type="register">Login</button>
-      
+    <form class="login-form" method="post">
+    
+      <input type="text" name="username" placeholder ="username"/>
+      <input type ="password"  name "password" placeholder ="password"/>
+      <button name ="register" type ="register">Login</button>
+     //redirect to the Registration page
       <p class="message">Not registered? <a href="Registration.php">Create an account</a></p>
+    
     </form>
   </div>
 </div>
